@@ -1,6 +1,6 @@
 # Title 
 
-
+ Build a video classification model running on large scale dataflow pipeline
 
 # Team 
 - Devansh Purohit (dnp9357@nyu.edu)
@@ -26,7 +26,7 @@ A few paper already exists on similar problems (1: https://github.com/jackwu502/
 
 # Dataset(s) 
 
-Currently, we can use the available NVSA dataset that has ~45k clips from 132 games in the 2018-2019 season. Can scrape data from publicly available APIs, websites, and archives. 
+Currently, we can use the available NVSA dataset that has ~45k clips from 132 games in the 2018-2019 season. A data can be obtained through multiple ways. It's available as an API or downloadable compressed file on the internet.
 
 ## Questions to be asked on the Datasets: 
 
@@ -36,11 +36,15 @@ Currently, we can use the available NVSA dataset that has ~45k clips from 132 ga
 
 ## Baseline metrics for evaluation: 
 
+
+
 ## (Optional) What are you going to compare against: 
+
+Accuracy of classification model is one of the most important things in this study. We are going to try at least two video classification models and compare against each other to see which one is better way to go.
 
 # Alternate for Systems oriented projects: 
 
-We're not sure whether our project is a systems oriented or dataset oriented project yet.
+We can't state what category our project can be classified as we're going to focus video classification and building a large scale dataflow. 
 
 ## Question: 
 
@@ -54,6 +58,8 @@ We're not sure whether our project is a systems oriented or dataset oriented pro
 - Integrate Spark for data flow and ML model
 
 ### What do you need for your project: 
+
+At least two video training models are required. Since video file size is larger than 
 
 # First Step of Execution
 
