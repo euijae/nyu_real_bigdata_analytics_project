@@ -36,7 +36,11 @@ Currently, we can use the available NVSA dataset that has ~45k clips from 132 ga
 
 ## Baseline metrics for evaluation: 
 
-
+1. Trimming a given input video frames as not every frame is relevant. For example, the length of available videos is up to 30 seconds. The trimming process can cut the length by 40%.
+2. Employing a range of techniques to effectively enhance these images, including:
+   - GAN-based method
+   - UNet based method
+3. To evaluate the outcomes, we will compare the prediction with the label
 
 ## (Optional) What are you going to compare against: 
 
