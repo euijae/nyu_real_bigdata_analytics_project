@@ -1,36 +1,79 @@
-Project Proposal: (2 pages, bullet point)
+# Title 
 
-# Title
 
-# Team
 
+# Team 
 - Devansh Purohit (dnp9357@nyu.edu)
 - Euijae Kim (ek3955@nyu.edu)
 
-# Problem
+# Problem 
 
-# Dataset(s)
+Analyze NBA video data to develop a classifier model that stores data for a video clip for these fields: [`SHOT_TYPE`, `BLK`, `FOUL`] (Description below). `SHOT_TYPE` can have the following values:
+- SHOT_TYPE
+  - 2PM_Layup
+  - 2PM_JumpShot
+  - 3PM
+  - Missed_shot (also has shot clock violations)
+  - FT_Made
+  - FT_Missed
+- BLK: A binary field storing whether a turnover happened due to a Block.
+- FOUL can have the following values:
+  - 0: No Foul
+  - 1: Foul by defensive team
+  - 2: Foul by offensive team.
 
-## Questions to be asked on the Datasets:
+A few paper already exists on similar problems (1: https://github.com/jackwu502/nsva ; https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136970019.pdf) (2: https://aircconline.com/csit/papers/vol11/csit110712.pdf). The goal of this project is to further the accuracy and dataset size for this problem, and try more Neural network architectures to improve results. Live video captioning can also be explored as an alternate problem statement. 
 
-## Baseline metrics for evaluation:
+# Dataset(s) 
 
-(Optional) What are you going to compare against:
+Currently, we can use the available NVSA dataset that has ~45k clips from 132 games in the 2018-2019 season. Can scrape data from publicly available APIs, websites, and archives. 
 
-# Alternate for Systems oriented projects:
+## Questions to be asked on the Datasets: 
 
-## Question:
+- Is there a way to pre-label these datasets?
+- Can a partially labeled dataset, or a model trained on a partially labeled dataset help us train a model on a larger dataset, increasing our accuracy?
+- Can we process the large amount of video data efficiently using Big data technologies?
 
-### Measure/Metrics (Performance, Abstraction or Property):
+## Baseline metrics for evaluation: 
 
-### Baselines:
+## (Optional) What are you going to compare against: 
 
-### What do you need for your project:
+# Alternate for Systems oriented projects: 
 
-# First Step of Execution:
+We're not sure whether our project is a systems oriented or dataset oriented project yet.
 
-## Tools:
+## Question: 
 
-## How are you using HPC?
+### Measure/Metrics (Performance, Abstraction or Property): 
 
-## What is Big Data in your project? (few MB is not big data)
+- Accuracy and Recall of categorizing unlabeled data.
+- Speed of categorization: Realtime? Acceptable delay?
+
+### Baselines: 
+
+- Integrate Spark for data flow and ML model
+
+### What do you need for your project: 
+
+# First Step of Execution
+
+- Formalize dataset by either configuring existing NVSA Dataset or by scraping publicly available clips
+- Create naive classification model on labeled data
+
+## Tools: 
+
+- Pytorch
+- Pytorch-lightning
+- Spark
+- Python
+- NumPy
+- Colab and HPC
+
+## How are you using HPC? 
+
+- Parallel processing on Spark for real-time video analysis through our ML model
+- Creation of ML model using GPU enabled compute instances.
+
+## What is Big Data in your project? (few MB is not big data) 
+
+- Vast swathes of unlabeled video data
