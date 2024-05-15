@@ -1,0 +1,16 @@
+nba_mae/dataset
+nba_mae/trimmed_dataset
+nba_mae/UCF101_subset
+nba_mae/videomae-base-finetuned-ucf101-subset
+nba_mae/m2
+nba_mae/__pycache__
+
+object_detection/data
+
+
+
+vid_download/dataset
+vid_download/dls
+vid_download/.ipynb_checkpoints
+vid_download/ftdataset
+vid_download/__pycache

@@ -1,0 +1,6 @@
+dataset
+trimmed_dataset
+UCF101_subset
+videomae-base-finetuned-ucf101-subset
+m2
+__pycache__
