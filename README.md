@@ -1,6 +1,6 @@
 # Title 
 
- Build a video classification model running on large scale dataflow pipeline
+ Build a video classification model running on large scale dataflow pipeline. Please traverse to the subfolders, and find the .md files to proceed.
 
 # Team 
 - Devansh Purohit (dnp9357@nyu.edu)
